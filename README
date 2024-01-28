@@ -1,0 +1,5 @@
+This project is a demo program using Influxdb in the spring boot2. x environment
+
+Branch 2.3 corresponds to versions before Spring Boot2.7
+
+Branch 2.7 corresponds to versions after Spring Boot2.7

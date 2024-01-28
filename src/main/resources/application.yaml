@@ -1,0 +1,21 @@
+influx:
+  url: xxx # URL to connect to InfluxDB.
+  token: xxx # Token to use for the authorization.
+  bucket: iot # Default destination bucket for writes.
+  org: tide
+  logLevel: NONE # The log level for logging the HTTP request and HTTP response. (Default: NONE)
+  readTimeout: 10s # Read timeout for OkHttpClient. (Default: 10s)
+  writeTimeout: 5s # Write timeout for OkHttpClient. (Default: 10s)
+  connectTimeout: 5s # Connection timeout for OkHttpClient. (Default: 10s)
+
+management:
+  health:
+    influxdb:
+      enabled: true
+  metrics:
+    export:
+      defaults:
+        enabled: false
+      influx:
+        # To disable export metrics to InfluxDB 2.x, set to false
+        enabled: true
